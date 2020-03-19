@@ -1,2 +1,4 @@
 api/node_modules
 dg_frontend/node_modules
+api/sqlizeConfig.json
+db_auth.env

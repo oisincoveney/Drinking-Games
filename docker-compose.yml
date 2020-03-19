@@ -16,10 +16,8 @@ services:
       - postgres_db
   postgres_db:
     build: db
-    environment:
-      POSTGRES_DB: dev
-      POSTGRES_USER: oisin
-      POSTGRES_PASSWORD: oisin
+    env_file:
+      - db_auth.env
     ports:
       - "8080:5432"
     restart: always
