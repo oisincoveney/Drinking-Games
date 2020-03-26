@@ -1,8 +1,0 @@
-{
-  "username": "oisin",
-  "password": "oisin",
-  "database": "dev",
-  "host": "postgres_db",
-  "port": 5432,
-  "dialect": "postgres"
-}
