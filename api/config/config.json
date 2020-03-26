@@ -3,8 +3,8 @@
     "username": "oisin",
     "password": "oisin",
     "database": "dev",
-    "port": 5432,
-    "host": "postgres_db",
+    "port": 8080,
+    "host": "localhost",
     "dialect": "postgres",
     "operatorsAliases": false
   },

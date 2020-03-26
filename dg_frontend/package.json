@@ -14,7 +14,8 @@
     "start": "node ./node_modules/react-scripts/bin/react-scripts.js start",
     "build": "node ./node_modules/react-scripts/bin/react-scripts.js build",
     "test": "node ./node_modules/react-scripts/bin/react-scripts.js test",
-    "eject": "node ./node_modules/react-scripts/bin/react-scripts.js eject"
+    "eject": "node ./node_modules/react-scripts/bin/react-scripts.js eject",
+    "dev": "nodemon ./node_modules/react-scripts/bin/react-scripts.js start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }

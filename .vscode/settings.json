@@ -2,7 +2,7 @@
     "editor.formatOnSave": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "python.linting.enabled": false,
     "editor.fontFamily": "'Operator Mono Book', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.formatOnType": true,

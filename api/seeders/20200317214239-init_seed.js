@@ -14,7 +14,7 @@ module.exports = {
           }], {});
         */
 
-        let p = models.sequelize.sync({ force: true });
+        let p = models.sequelize.sync();
 
         await p.then(() =>
             queryInterface.bulkInsert('Rules', [
@@ -55,18 +55,18 @@ module.exports = {
             }
         ]));
 
-        await p.then(queryInterface.bulkInsert('RuleOrderReferences', [
+        await p.then(queryInterface.bulkInsert('RuleOrders', [
             {
-                Order: 1,
-                rulesetid: 1,
-                ruleid: 2,
+                ruleOrderInSet: 1,
+                RuleSetId: 1,
+                RuleId: 2,
                 createdAt: new Date(),
                 updatedAt: new Date()
             },
             {
-                Order: 2,
-                rulesetid: 1,
-                ruleid: 1,
+                ruleOrderInSet: 2,
+                RuleSetId: 1,
+                RuleId: 1,
                 createdAt: new Date(),
                 updatedAt: new Date()
             }
@@ -84,8 +84,8 @@ module.exports = {
         */
         return Promise.all([
             queryInterface.bulkDelete('Rules', null, {}),
-            queryInterface.bulkDelete('ruleSetNames', null, {}),
-            queryInterface.bulkDelete('RuleOrderReferences', null, {})
+            queryInterface.bulkDelete('RuleSets', null, {}),
+            queryInterface.bulkDelete('RuleOrders', null, {})
         ])
     }
 };
