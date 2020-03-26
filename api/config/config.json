@@ -3,6 +3,7 @@
     "username": "oisin",
     "password": "oisin",
     "database": "dev",
+    "port": 5432,
     "host": "postgres_db",
     "dialect": "postgres",
     "operatorsAliases": false

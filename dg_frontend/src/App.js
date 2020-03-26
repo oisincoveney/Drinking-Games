@@ -14,7 +14,7 @@ class App extends React.Component {
         fetch("http://localhost:9000/kings")
             .then(res => res.json())
             .then((data) => {
-                this.setState({ruleNames: data});
+                this.setState({ ruleNames: data });
             })
             .catch(console.log)
     }
@@ -23,14 +23,15 @@ class App extends React.Component {
     }
 
     getListElem() {
+        console.log(this.state.ruleNames)
         return (
             <React.Fragment>
                 {this.state.ruleNames.map(function (elem) {
                     return (
-                    <React.Fragment key={elem['rule']}>
-                        <h1>{elem['rule']}</h1>
-                        <h2>{elem['description']}</h2>
-                    </React.Fragment>)
+                        <React.Fragment key={elem['ruleName']}>
+                            <h1>{elem['ruleName']}</h1>
+                            <h2>{elem['description']}</h2>
+                        </React.Fragment>)
                 })}
             </React.Fragment>
         )

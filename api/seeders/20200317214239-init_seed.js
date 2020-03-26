@@ -14,18 +14,18 @@ module.exports = {
           }], {});
         */
 
-        let p = models.sequelize.sync({force: true});
+        let p = models.sequelize.sync({ force: true });
 
         await p.then(() =>
             queryInterface.bulkInsert('Rules', [
                 {
-                    rule: "Rule #1",
+                    ruleName: "Rule #1",
                     description: "This is a rule",
                     createdAt: new Date(),
                     updatedAt: new Date()
                 },
                 {
-                    rule: "Rule #2",
+                    ruleName: "Rule #2",
                     description: "This is also a rule",
                     createdAt: new Date(),
                     updatedAt: new Date()
@@ -34,22 +34,22 @@ module.exports = {
         );
         // await queryInterface.bulkInsert('Rule', [
         //   {
-        //     rule: "Rule #1",
+        //     ruleName: "Rule #1",
         //     description: "This is a rule",
         //   },
         //   {
-        //     rule: "Rule #2",
+        //     ruleName: "Rule #2",
         //     description: "This is also a rule",
         //   }
         // ]);
-        await p.then(() => queryInterface.bulkInsert('RuleSetNames', [
+        await p.then(() => queryInterface.bulkInsert('RuleSets', [
             {
-                rulesetname: "Oisin's Rules",
+                ruleSetName: "Oisin's Rules",
                 createdAt: new Date(),
                 updatedAt: new Date()
             },
             {
-                rulesetname: "Not Oisin's Rules",
+                ruleSetName: "Not Oisin's Rules",
                 createdAt: new Date(),
                 updatedAt: new Date()
             }
@@ -84,7 +84,7 @@ module.exports = {
         */
         return Promise.all([
             queryInterface.bulkDelete('Rules', null, {}),
-            queryInterface.bulkDelete('RuleSetNames', null, {}),
+            queryInterface.bulkDelete('ruleSetNames', null, {}),
             queryInterface.bulkDelete('RuleOrderReferences', null, {})
         ])
     }

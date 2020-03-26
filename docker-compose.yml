@@ -1,6 +1,6 @@
 version: "2"
 services:
-  profile_page:
+  dg_frontend:
     build: dg_frontend
     restart: always
     ports:
