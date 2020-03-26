@@ -5,6 +5,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   RuleSet.associate = function (models) {
     // associations can be defined here
+    RuleSet.hasMany(models.RuleOrder)
+    RuleSet.hasMany(models.Game)
   };
   return RuleSet;
 };

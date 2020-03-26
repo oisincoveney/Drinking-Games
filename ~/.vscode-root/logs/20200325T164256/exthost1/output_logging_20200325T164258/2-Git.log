@@ -926,3 +926,185 @@ Error: ENOENT: no such file or directory, watch '/home/oisin/DrinkingGames/Drink
 	at l.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48:865)
 	at R.updateModelState (/usr/share/code/resources/app/extensions/git/dist/main.js:1:101605)
 > git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/game.js
+> git cat-file -s 1af8952c0ab3a4ca3f74a439e536c286f4b5f8b2
+> git show :api/models/game.js
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/user.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/user.js
+> git cat-file -s 7dd237ec4924f79b32726b7bf51dee646ac2ce88
+> git show :api/models/ruleorder.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleorder.js
+> git cat-file -s baeb0b68502def147e56c2fc21f8b4b7d0d54f62
+> git show :api/models/rule.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/rule.js
+> git cat-file -s d7b811d89023814f9874d4deb6daebd5843725f8
+> git show :api/models/ruleorder.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleorder.js
+> git cat-file -s baeb0b68502def147e56c2fc21f8b4b7d0d54f62
+> git show :api/models/ruleset.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleset.js
+> git cat-file -s 81e9543f16e906ded278b1de9d7b8fc3a1bc9bc2
+> git show :api/models/game.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/game.js
+> git cat-file -s 1af8952c0ab3a4ca3f74a439e536c286f4b5f8b2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/ruleorder.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleorder.js
+> git cat-file -s baeb0b68502def147e56c2fc21f8b4b7d0d54f62
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/rule.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/rule.js
+> git cat-file -s d7b811d89023814f9874d4deb6daebd5843725f8
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/ruleorder.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleorder.js
+> git cat-file -s baeb0b68502def147e56c2fc21f8b4b7d0d54f62
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/ruleset.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleset.js
+> git cat-file -s 81e9543f16e906ded278b1de9d7b8fc3a1bc9bc2
+> git show :api/models/ruleorder.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleorder.js
+> git cat-file -s baeb0b68502def147e56c2fc21f8b4b7d0d54f62
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/ruleset.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleset.js
+> git cat-file -s 81e9543f16e906ded278b1de9d7b8fc3a1bc9bc2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/rule.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/rule.js
+> git cat-file -s d7b811d89023814f9874d4deb6daebd5843725f8
+> git show :api/models/ruleorder.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleorder.js
+> git cat-file -s baeb0b68502def147e56c2fc21f8b4b7d0d54f62
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/user.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/user.js
+> git cat-file -s 7dd237ec4924f79b32726b7bf51dee646ac2ce88
+> git show :api/models/game.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/game.js
+> git cat-file -s 1af8952c0ab3a4ca3f74a439e536c286f4b5f8b2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :api/models/ruleset.js
+> git ls-files --stage -- /home/oisin/DrinkingGames/Drinking-Games/api/models/ruleset.js
+> git cat-file -s 81e9543f16e906ded278b1de9d7b8fc3a1bc9bc2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
