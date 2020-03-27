@@ -37,49 +37,49 @@ module.exports = {
       ])
     })
 
-    await p.then(() => {
-      queryInterface.bulkInsert('Users', [
-        {
-          firstName: "John",
-          lastName: "Doe",
-          email: "johndoe@gmail.com",
-          wins: "420",
-          losses: "0",
-          gamesPlayed: "69",
-          favoriteDrink: "Corona",
-          createdAt: new Date(),
-          updatedAt: new Date()
-        },
-        {
-          firstName: "Dim",
-          lastName: "Sum",
-          email: "dimsum@gmail.com",
-          wins: "0",
-          losses: "420",
-          gamesPlayed: "69",
-          favoriteDrink: "Bud Light Lime",
-          createdAt: new Date(),
-          updatedAt: new Date()
-        }
-      ])
-    })
+    // await p.then(() => {
+    //   queryInterface.bulkInsert('Users', [
+    //     {
+    //       firstName: "John",
+    //       lastName: "Doe",
+    //       email: "johndoe@gmail.com",
+    //       wins: "420",
+    //       losses: "0",
+    //       gamesPlayed: "69",
+    //       favoriteDrink: "Corona",
+    //       createdAt: new Date(),
+    //       updatedAt: new Date()
+    //     },
+    //     {
+    //       firstName: "Dim",
+    //       lastName: "Sum",
+    //       email: "dimsum@gmail.com",
+    //       wins: "0",
+    //       losses: "420",
+    //       gamesPlayed: "69",
+    //       favoriteDrink: "Bud Light Lime",
+    //       createdAt: new Date(),
+    //       updatedAt: new Date()
+    //     }
+    //   ])
+    // })
 
-    await p.then(() => {
-      queryInterface.bulkInsert('GameUser', [
-        {
-          GameId: 1,
-          UserId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date()
-        },
-        {
-          GameId: 1,
-          UserId: 2,
-          createdAt: new Date(),
-          updatedAt: new Date()
-        },
-      ])
-    })
+    // await p.then(() => {
+    //   queryInterface.bulkInsert('GameUser', [
+    //     {
+    //       GameId: 1,
+    //       UserId: 1,
+    //       createdAt: new Date(),
+    //       updatedAt: new Date()
+    //     },
+    //     {
+    //       GameId: 1,
+    //       UserId: 2,
+    //       createdAt: new Date(),
+    //       updatedAt: new Date()
+    //     },
+    //   ])
+    // })
     return p
   },
 

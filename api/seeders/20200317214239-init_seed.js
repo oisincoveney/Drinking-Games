@@ -2,7 +2,7 @@
 var models = require('../models');
 
 module.exports = {
-    up: async (queryInterface, Sequelize) => {
+    up: (queryInterface, Sequelize) => {
         /*
           Add altering commands here.
           Return a promise to correctly handle asynchronicity.
@@ -14,9 +14,7 @@ module.exports = {
           }], {});
         */
 
-        let p = models.sequelize.sync();
-
-        await p.then(() =>
+        return Promise.all([
             queryInterface.bulkInsert('Rules', [
                 {
                     ruleName: "Rule #1",
@@ -30,8 +28,37 @@ module.exports = {
                     createdAt: new Date(),
                     updatedAt: new Date()
                 }
+            ]),
+            queryInterface.bulkInsert('RuleSets', [
+                {
+                    ruleSetName: "Oisin's Rules",
+                    createdAt: new Date(),
+                    updatedAt: new Date()
+                },
+                {
+                    ruleSetName: "Not Oisin's Rules",
+                    createdAt: new Date(),
+                    updatedAt: new Date()
+                }
+            ]),
+            queryInterface.bulkInsert('RuleOrders', [
+                {
+                    ruleOrderInSet: 1,
+                    RuleSetId: 1,
+                    RuleId: 2,
+                    createdAt: new Date(),
+                    updatedAt: new Date()
+                },
+                {
+                    ruleOrderInSet: 2,
+                    RuleSetId: 1,
+                    RuleId: 1,
+                    createdAt: new Date(),
+                    updatedAt: new Date()
+                }
             ])
-        );
+        ])
+
         // await queryInterface.bulkInsert('Rule', [
         //   {
         //     ruleName: "Rule #1",
@@ -42,36 +69,6 @@ module.exports = {
         //     description: "This is also a rule",
         //   }
         // ]);
-        await p.then(() => queryInterface.bulkInsert('RuleSets', [
-            {
-                ruleSetName: "Oisin's Rules",
-                createdAt: new Date(),
-                updatedAt: new Date()
-            },
-            {
-                ruleSetName: "Not Oisin's Rules",
-                createdAt: new Date(),
-                updatedAt: new Date()
-            }
-        ]));
-
-        await p.then(queryInterface.bulkInsert('RuleOrders', [
-            {
-                ruleOrderInSet: 1,
-                RuleSetId: 1,
-                RuleId: 2,
-                createdAt: new Date(),
-                updatedAt: new Date()
-            },
-            {
-                ruleOrderInSet: 2,
-                RuleSetId: 1,
-                RuleId: 1,
-                createdAt: new Date(),
-                updatedAt: new Date()
-            }
-        ]));
-        return p;
     },
 
     down: (queryInterface, Sequelize) => {

@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "migrate_db": "npx sequelize-cli db:migrate",
     "populate_db": "npx sequelize-cli db:seed:all --debug",
-    "start": "npm run populate_db && node ./bin/www",
-    "dev": "npm run populate_db && nodemon ./bin/www"
+    "start": "npm run populate_db && node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
