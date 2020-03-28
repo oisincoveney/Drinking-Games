@@ -6,8 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Rule.associate = function (models) {
     // associations can be defined here
-    Rule.hasMany(models.RuleOrder)
-    
+    Rule.belongsToMany(models.RuleSet, {through: {model: models.RuleOrder}})
   }
   return Rule;
 };

@@ -5,7 +5,7 @@
   "scripts": {
     "migrate_db": "npx sequelize-cli db:migrate",
     "populate_db": "npx sequelize-cli db:seed:all --debug",
-    "start": "npm run populate_db && node ./bin/www"
+    "start": "npm run migrate_db && npm run populate_db && node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
