@@ -1,21 +1,18 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Rules', {
+    return queryInterface.createTable('RuleSets', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      ruleName: {
+      name: {
         type: Sequelize.STRING
       },
       description: {
         type: Sequelize.STRING
-      },
-      index: {
-        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
@@ -28,6 +25,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Rules');
+    return queryInterface.dropTable('RuleSets');
   }
 };

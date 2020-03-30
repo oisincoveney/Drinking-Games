@@ -7,11 +7,12 @@ module.exports = (sequelize, DataTypes) => {
     wins: DataTypes.INTEGER,
     losses: DataTypes.INTEGER,
     gamesPlayed: DataTypes.INTEGER,
-    favoriteDrink: DataTypes.STRING
+    favoriteDrink: DataTypes.STRING,
+    password: DataTypes.STRING
   }, {});
-  User.associate = function (models) {
+  User.associate = function(models) {
     // associations can be defined here
-    User.belongsToMany(models.Game, { through: 'GameUser' })
+    User.belongsToMany(models.Game, {through: 'GameUsers'})
   };
   return User;
 };

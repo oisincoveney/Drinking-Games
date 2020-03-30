@@ -1,7 +1,9 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const CardImage = sequelize.define('CardImage', {
-    cardImage: DataTypes.BLOB
+    suit: DataTypes.STRING,
+    number: DataTypes.INTEGER,
+    image: DataTypes.BLOB
   }, {});
   CardImage.associate = function(models) {
     // associations can be defined here
