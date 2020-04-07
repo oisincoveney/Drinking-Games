@@ -1,21 +1,22 @@
 'use strict';
+// let models = require('../models/index');
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Users', {
+    return queryInterface.createTable('RuleOrders', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      email: {
-        type: Sequelize.STRING
+      order: {
+        type: Sequelize.INTEGER
       },
-      emailMD5: {
-        type: Sequelize.STRING
+      RuleId: {
+        type: Sequelize.INTEGER,
       },
-      favoriteDrink: {
-        type: Sequelize.STRING
+      RuleSetId: {
+        type: Sequelize.INTEGER,
       },
       createdAt: {
         allowNull: false,
@@ -28,6 +29,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Users');
+    return queryInterface.dropTable('RuleOrders');
   }
 };

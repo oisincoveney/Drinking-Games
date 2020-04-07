@@ -17,6 +17,9 @@ module.exports = {
       cardOrder: {
         type: Sequelize.STRING
       },
+      gameRuleSet: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

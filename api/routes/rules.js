@@ -6,7 +6,7 @@ let Rule = model.Rule
 /**
  * Create new rule set and post form data
  */
-router.post('/new', () => { })
+router.post('/new', () => { });
 
 /**
  * Get a rule set with the id

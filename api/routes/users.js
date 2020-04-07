@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 let model = require('../models/index');
-let User = model.User
+let User = model.User;
 
 /* GET users listing. */
 router.get('/:id', async (req, res, next) => {

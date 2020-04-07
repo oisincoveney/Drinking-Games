@@ -11,6 +11,7 @@ let upload = multer()
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
 let rulesRouter = require('./routes/rules');
+let gameRouter = require('./routes/game')
 
 app = express();
 
@@ -39,6 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/rules', rulesRouter);
+app.use('/game', gameRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
